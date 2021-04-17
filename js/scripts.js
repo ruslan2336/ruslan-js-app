@@ -15,7 +15,7 @@ let pokemonList = [
 		height: 130
 	}
 ];
-for (let i = 1; i < pokemonList; i++) {
+for (let i = 0; i < pokemonList.height; i++) {
   if (height <120 && height >50){
     document.write(pokemonList[i].name + " is average");
   }else if (height <50){

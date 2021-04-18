@@ -15,10 +15,8 @@ let pokemonList = [
 		height: 130
 	}
 ];
-for (let i = 0; i < pokemonList.height; i++) {
-  if (height <120 && height >50){
-    document.write(pokemonList[i].name + " is average");
-  }else if (height <50){
+for (let i = 0; i < pokemonList.length; i++) {
+ if (pokemonList[i].height <50){
     document.write(pokemonList[i].name + " is small");
   }else {
     document.write(pokemonList[i].name + " is tall");

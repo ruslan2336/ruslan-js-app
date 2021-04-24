@@ -19,7 +19,7 @@ let pokemonRepository = (function () {
 
   return {
     add: function(pokemon) {
-      pokemonList.add(item);
+      pokemonList.push(item);
     },
     function: pokemonList.getAll() {
       return pokemonList;
@@ -27,6 +27,7 @@ let pokemonRepository = (function () {
   };
 })();
 
-console.log(pokemonRepository.getAll()); // []
-pokemonRepository.add({ name: 'Pikachu' });
+
+userList.forEach(function(pokemonRepository.getAll) {
 document.write(pokemon.name + '- Height: ' + pokemon.height + ', Type: ' + pokemon.types + '<br>');
+)};

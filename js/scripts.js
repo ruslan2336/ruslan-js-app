@@ -29,4 +29,4 @@ let pokemonRepository = (function () {
 
 console.log(pokemonRepository.getAll()); // []
 pokemonRepository.add({ name: 'Pikachu' });
-document.write(pokemon.name + '- Height: ' + pokemon.height + ', Type: ' + pokemon.type + '<br>');
+document.write(pokemon.name + '- Height: ' + pokemon.height + ', Type: ' + pokemon.types + '<br>');

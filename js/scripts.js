@@ -17,17 +17,26 @@ let pokemonRepository = (function () {
 		}
 	];
 
-  return {
-    add: function(pokemon) {
+ function add(item) {
+    if (typeof item === 'object') {
       pokemonList.push(item);
-    },
-    function: pokemonList.getAll() {
+    }
+ },
+    function getAll() {
       return pokemonList;
     }
-  };
+	return {
+    add: add,
+    getAll: getAll,
+  }
 })();
 
 
-userList.forEach(function(pokemonRepository.getAll) {
-document.write(pokemon.name + '- Height: ' + pokemon.height + ', Type: ' + pokemon.types + '<br>');
+pokemonRepository.getAll().forEach(function (pokemon) {
+	if (pokemon.height > 80) {
+document.write('${pokemon.name} (height: ${pokemon.height}) is adult <br>');
+	}
+	else {
+		document.write(`${pokemon.name}  (height:$ {pokemon.height}) is child<br>`)
+	}
 )};

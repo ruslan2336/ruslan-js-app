@@ -21,7 +21,7 @@ let pokemonRepository = (function () {
     if (typeof item === 'object') {
       pokemonList.push(item);
     }
- },
+ }
     function getAll() {
       return pokemonList;
     }
@@ -34,9 +34,9 @@ let pokemonRepository = (function () {
 
 pokemonRepository.getAll().forEach(function (pokemon) {
 	if (pokemon.height > 80) {
-document.write('${pokemon.name} (height: ${pokemon.height}) is adult <br>');
+document.write(`${pokemon.name}  (height: ${pokemon.height}) is adult<br>`);
 	}
 	else {
-		document.write(`${pokemon.name}  (height:$ {pokemon.height}) is child<br>`)
+		document.write(`${pokemon.name}  (height: ${pokemon.height}) is child<br>`)
 	}
-)};
+});

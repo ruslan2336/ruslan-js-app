@@ -2,8 +2,6 @@ let pokemonRepository = (function () {
 	let pokemonList = [];
 	let apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=150';
 
-};
-
  function add(item) {
     if (typeof item === 'object') {
       pokemonList.push(item);
@@ -62,7 +60,7 @@ let pokemonRepository = (function () {
     add: add,
     getAll: getAll,
     loadList: loadList,
-	loadDetails: loadDetails
+	addListItem: addListItem
   };
 })();
 

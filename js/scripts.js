@@ -55,7 +55,7 @@ let pokemonRepository = (function () {
         titleElement.innerText = title;
 
         let contentElement = document.createElement('p');
-        contentElement.innerText = text;
+        contentElement.innerText = 'Height: ' + text;
 
         modal.appendChild(closeButtonElement);
         modal.appendChild(titleElement);
